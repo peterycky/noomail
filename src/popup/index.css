@@ -4,7 +4,7 @@
 
 :root {
   font-family: -apple-system, Inter, Avenir, sans-serif;
-  color-scheme: dark;
+  color-scheme: light dark;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

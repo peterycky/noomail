@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./popup.html", 
-    "./options.html", 
-    "./src/**/*.{,ts,tsx}"
-  ],
+  darkMode: 'media',
+  content: ['./popup.html', './options.html', './src/**/*.{,ts,tsx}'],
   theme: {
     extend: {},
   },
