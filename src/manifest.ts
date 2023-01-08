@@ -2,7 +2,7 @@ import { defineManifest } from '@crxjs/vite-plugin'
 
 export default defineManifest({
   name: 'Noomail',
-  description: 'Extension that gives you new email aliast hint',
+  description: 'Extension that gives you a new email aliast hints',
   version: '1.0.0',
   manifest_version: 3,
   icons: {
@@ -15,22 +15,12 @@ export default defineManifest({
     default_popup: 'popup.html',
     default_icon: 'img/logo-48.png',
   },
-  options_page: 'options.html',
-  background: {
-    service_worker: 'src/background/index.ts',
-    type: 'module',
-  },
-  content_scripts: [
-    {
-      matches: ['http://*/*', 'https://*/*'],
-      js: ['src/content/index.ts'],
-    },
-  ],
+  options_page: 'index.html',
   web_accessible_resources: [
     {
       resources: ['img/logo-16.png', 'img/logo-34.png', 'img/logo-48.png', 'img/logo-128.png'],
       matches: [],
     },
   ],
-  permissions: ["tabs", "activeTab", "clipboardWrite", "clipboardRead", "scripting"],
+  permissions: ["tabs", "activeTab", "clipboardWrite", "clipboardRead", "storage"],
 })

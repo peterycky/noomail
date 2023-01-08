@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import ClipboardCheckIcon from '../components/Icons/ClipboardCheck'
-import ClipboardPlusIcon from '../components/Icons/ClipboardPlus'
 
 function App() {
   const [url, seturl] = useState<string | undefined>(undefined)
@@ -19,11 +17,11 @@ function App() {
       <ul className="divide-y divide-gray-500 dark:divide-gray-700">
         <li className="py-2 flex justify-between">
           <div>foo@bar.com</div>
-          <ClipboardPlusIcon />
+          <div>📋 Copy</div>
         </li>
         <li className="py-2 flex justify-between">
           <div>bar@baz.com</div>
-          <ClipboardCheckIcon />
+          <div>✅ Copied</div>
         </li>
       </ul>
     </main>
